@@ -4,6 +4,11 @@
     padding: 0px;
 
 }
+@font-face {
+    font-family: 'Cursive_serif';
+    src: url("../fontes/CursiveSerif-Bold.ttf") format('truetype');
+    font-weight: normal;
+}
 header{
     background-color: blue;
     color: white;
@@ -12,7 +17,6 @@ header{
 header > h1{
     font-variant: small-caps;
     padding-top: 50px;
-    font-family: cursive;
     font-size: 6vw;
 }
 header > p{
@@ -22,7 +26,7 @@ a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 a:hover{
     text-decoration: underline;
@@ -33,7 +37,8 @@ section{
     padding-left: 30px;
     font-size: 1.3em;
     line-height: 2.0em;
-    font-family: cursive;
+    font-family: Cursive_serif;
+    border-radius: 20px;
 }
 section > p{
 padding-bottom: 2em;
@@ -47,6 +52,7 @@ section.imagem{
     background-color: black;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset  6px 6px 13px rgba(0, 0, 0, 0.678);
 }
 section.imagem > p{
     display: inline-block;
@@ -68,8 +74,23 @@ section#q3{
     background-position: right bottom;
 
 }
+section#notas{
+background-color: rgba(0, 0, 0, 0.274);
+border-radius: 0px;
+}
+section> details{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+section > details > summary{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
 footer{
     background-color: blue;
     text-align: center;
     padding-top: 5px;
+}
+footer >p{
+    color: white;
 }
